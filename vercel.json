@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path(.*)",
+      "destination": "https://api.stakease.co/api/:path"
+    },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
