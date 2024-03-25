@@ -55,8 +55,8 @@ export const ActionHelper = async (
     const { key } = await getKeplr(chainId);
     const pubKey = Buffer.from(key.pubKey).toString("base64");
     const injectiveAddress = key.bech32Address;
-    const restEndpoint = getNetworkEndpoints(Network.MainnetSentry).rest
-    // const restEndpoint = 'https://sentry.tm.injective.network:443'
+    // const restEndpoint = getNetworkEndpoints(Network.MainnetSentry).rest
+    const restEndpoint = 'https://sentry.lcd.injective.network'
     const msg = MsgExecuteContractCompat.fromJSON({
       contractAddress,
       sender: sender,
